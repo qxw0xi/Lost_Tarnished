@@ -312,6 +312,7 @@ body{
     justify-content: space-around;
     align-items: start;
     flex-wrap: wrap;
+    z-index:-1;
 }
 
 .boss_text{
