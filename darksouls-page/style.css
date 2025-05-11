@@ -83,6 +83,7 @@ img{
 body{
     background-color: black;
     animation: appear 2s linear;
+    overflow-x: hidden;
 }
 
 #background_video{
