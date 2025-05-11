@@ -64,23 +64,6 @@
     }
 }
 
-h2{
-    animation: appear 0.5s linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 20%;
-}
-p{
-    animation: appear 0.5s linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 20%;
-}
-img{
-    animation: appear 0.5s linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 20%;
-}
-
-
 body{
     background-color: black;
     animation: appear 1.5s linear;
