@@ -1,0 +1,339 @@
+@font-face {
+    font-family: "Baskervville SC";
+    src: url("../fonts/BaskervvilleSC-Regular.ttf");
+}
+@font-face {
+    font-family: 'Cinzel';
+    src: url("../fonts/Cinzel-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Benne";
+    src: url("../fonts/Benne-Regular.ttf");
+}
+@font-face {
+    font-family: "Besley";
+    src: url("../fonts/Besley-Regular.ttf");
+}
+@font-face {
+    font-family: "Bungee Hairline";
+    src: url("../fonts/BungeeHairline-Regular.ttf");
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right{
+    from{
+        transform: translateX(200%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-down{
+    from{
+        transform: translateY(200%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+@keyframes scale {
+    from{
+        scale: 0%;
+    }
+    to{
+        scale: 100%;
+    }
+}
+
+h2{
+    animation: appear 0.5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+p{
+    animation: appear 0.5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+img{
+    animation: appear 0.5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+body{
+    background-color: black;
+    animation: appear 2s linear;
+}
+
+#background_video{
+    position:fixed;
+    z-index:-1;
+    width:100%;
+}
+
+.top_banner_container{
+    position: fixed;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1;
+}
+
+.top_banner_text{
+    margin-left:40px;
+    text-align: center;
+    font-family: "Baskervville SC";
+    font-size: 20px;
+    letter-spacing: 3px;
+    color:white;
+    text-decoration: none;
+}
+
+.darksouls-logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#darksouls-logo{
+    width:700px;
+}
+
+.top_page_container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:-100px;
+}
+
+#top_page_text{
+    font-family: 'Baskervville SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 75.94%;
+    /* or 36px */
+    text-align: center;
+    letter-spacing: -0.04em;
+
+    color: #B3B2B2;
+
+    text-shadow: 0px 4px 38.8px #FF3B00;
+    width:1100px;
+    margin-right:300px;
+}
+
+#top_page_image{
+    width:600px;
+}
+
+.heading{
+    font-family: 'Baskervville SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 76px;
+    /* identical to box height, or 119% */
+    text-align: center;
+    letter-spacing: -0.04em;
+
+    color: #E2C6C6;
+
+    text-shadow: 0px 4px 66.7px #FF0000;
+}
+
+.classes_container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.classes{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: 50px;
+    opacity:0.3;
+    transition: 0.5s ease-out;
+    z-index:1
+}
+
+.classes:hover{
+    transform: scale(110%);
+    opacity:1;
+}
+
+.classes_names{
+    font-family: 'Baskervville SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 76px;
+    /* identical to box height, or 119% */
+    text-align: center;
+    letter-spacing: -0.04em;
+
+    color: #E2C6C6;
+
+    text-shadow: 0px 4px 66.7px #FF0000;
+}
+
+.classes_image{
+    width:300px;
+}
+#background_image1{
+    width:650px;
+}
+#background_image2{
+    width:600px;
+    height:1000px;
+}
+.background_images{
+    display:flex;
+    justify-content: space-between;
+    margin-top:-1300px;
+}
+
+.ring{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity:0.3;
+    transition: 0.5s ease-out;
+}
+
+.mring{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ring:hover{
+    transform: scale(110%);
+    opacity:1;
+}
+
+.item_description{
+    font-family: 'Baskervville SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    /* or 97% */
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #A29A9A;
+
+    text-shadow: 0px 4px 33.6px #64E800;
+    width:300px;
+}
+
+.top_rings{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 200px;
+}
+
+.ornament{
+    width:500px;
+}
+
+.items{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.items_image{
+    width:400px;
+}
+
+.bosses_container{
+    display:flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.boss{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: 150px;
+    opacity:0.3;
+    transition: 0.5s ease-out;
+}
+
+.boss:hover{
+    transform: scale(110%);
+    opacity:1;
+}
+
+.bosses_description{
+    font-family: 'Baskervville SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 35px;
+    /* or 97% */
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #A29A9A;
+
+    text-shadow: 0px 4px 33.6px #FFFFFF;
+    width:300px;
+}
+
+#lost_tarnished{
+    font-family: 'Bungee Hairline';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #928E8E;
+
+    opacity: 0.65;
+    text-shadow: 0px 4px 24.1px #000000;
+    margin:0px;
+}
+
+.bottom_banner{
+    border-top: 1px solid white;
+    margin-top: 100px;
+}
+
+.social{
+    margin-top:-100px;
+}
