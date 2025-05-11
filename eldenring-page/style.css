@@ -84,6 +84,7 @@ img{
 body{
     background-color: black;
     animation: appear 1.5s linear;
+    overflow-x: hidden;
 }
 
 #background_video{
