@@ -1,0 +1,525 @@
+@font-face {
+    font-family: "Baskervville SC";
+    src: url("../fonts/BaskervvilleSC-Regular.ttf");
+}
+@font-face {
+    font-family: 'Cinzel';
+    src: url("../fonts/Cinzel-VariableFont_wght.ttf");
+}
+@font-face {
+    font-family: "Benne";
+    src: url("../fonts/Benne-Regular.ttf");
+}
+@font-face {
+    font-family: "Besley";
+    src: url("../fonts/Besley-Regular.ttf");
+}
+@font-face {
+    font-family: "Bungee Hairline";
+    src: url("../fonts/BungeeHairline-Regular.ttf");
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-right{
+    from{
+        transform: translateX(200%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes scale {
+    from{
+        scale: 0%;
+    }
+    to{
+        scale: 100%;
+    }
+}
+
+@keyframes slide-in-down{
+    from{
+        transform: translateY(200%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+h2{
+    animation: appear 0.5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+p{
+    animation: appear 0.5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+img{
+    animation: appear 0.5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+
+body{
+    background-color: black;
+    animation: appear 1.5s linear;
+}
+
+#background_video{
+    position:fixed;
+    z-index:-1;
+    width:100%;
+    opacity:0.5;
+}
+
+.top_banner_container{
+    position: fixed;
+    width: auto;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 1;
+}
+
+.top_banner_text{
+    margin-left:40px;
+    text-align: center;
+    font-family: "Baskervville SC";
+    font-size: 20px;
+    letter-spacing: 3px;
+    color:white;
+    text-decoration: none;
+}
+
+.eldenring_logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#eldenring_logo{
+    width:700px;
+}
+
+.top_page_container{
+    position:relative;
+    top:-100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: -1;
+}
+
+#top_page_image{
+    width: 500px;
+}
+
+#top_page_text{
+    width: 800px;
+    position:relative;
+    top:50px;
+    left:-250px;
+    text-align: center;
+    font-family: 'Benne';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 119%;
+    letter-spacing: 0.03em;
+
+    color: #E2DEC6;
+
+    text-shadow: 0px 1px 22px #FFFFFF;
+
+}
+
+.middle_page_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.middle_page_image_container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 55%;
+}
+
+#middle_page_text{
+    color:white;
+    text-align: center;
+    font-family: 'Baskervville SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 76px;
+    /* identical to box height, or 119% */
+    text-align: center;
+    letter-spacing: -0.04em;
+
+    color: #E2DEC6;
+
+    text-shadow: 0px 4px 66.7px #FFFFFF;
+}
+
+.middle_page_image{
+    position: relative;
+    width: 500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:-25px;
+    transition: 0.5s ease-out;
+    opacity: 0.8;
+}
+
+.middle_page_image:hover{
+    transform: scale(110%);
+    z-index: 1;
+    opacity: 1;
+}
+
+.after_middle_page_mtext{
+    margin-top:100px;
+    font-family: 'Baskervville SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 79px;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #E2DEC6;
+
+    text-shadow: 0px 4px 66.7px #FFFFFF;
+
+}
+
+#godrick_rune{
+    width:400px;
+    position: relative;
+    left: 300px;
+    top:150px;
+}
+
+.after_middle_page_godrick_rune{
+    display: flex;
+    justify-content: center;
+    margin-top: -400px;
+    position: relative;
+}
+
+.after_middle_page_godrick_rune_hover{
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: 1.5s ease-out;
+}
+
+.after_middle_page_godrick_rune_hover:hover{
+    opacity:1;
+}
+
+.after_middle_page_top_runes{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#morgott_rune{
+    width:200px;
+    position: relative;
+    left: 150px;
+    top:100px;
+}
+
+.after_middle_page_morgott_rune{
+    display: flex;
+    justify-content: left;
+}
+
+.after_middle_page_morgott_rune_hover{
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: 1.5s ease-out;
+}
+
+.after_middle_page_morgott_rune_hover:hover{
+    opacity:1;
+}
+
+#mohg_rune{
+    width:200px;
+    position: relative;
+    left: 150px;
+    top:100px;
+}
+
+.after_middle_page_mohg_rune{
+    display: flex;
+    justify-content: left;
+    margin-left: 400px;
+}
+
+.after_middle_page_mohg_rune_hover{
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: 1.5s ease-out;
+}
+
+.after_middle_page_mohg_rune_hover:hover{
+    opacity:1;
+}
+
+#malenia_rune{
+    width:200px;
+    position: relative;
+    left: 150px; 
+    top:100px;
+}
+
+.after_middle_page_malenia_rune{
+    display: flex;
+    justify-content: left;
+}
+
+.after_middle_page_malenia_rune_hover{
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: 1.5s ease-out;
+}
+
+.after_middle_page_malenia_rune_hover:hover{
+    opacity:1;
+}
+
+#radahn_rune{
+    width:200px;
+    position: relative;
+    left: 150px;
+    top:110px;
+}
+
+.after_middle_page_radahn_rune{
+    display: flex;
+    justify-content: left;
+    margin-left: 400px;
+}
+
+.after_middle_page_radahn_rune_hover{
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: 1.5s ease-out;
+}
+
+.after_middle_page_radahn_rune_hover:hover{
+    opacity:1;
+}
+
+.after_middle_page_background1{
+    display:flex;
+    justify-content: left;
+    margin-top: -1000px;
+    position: relative;
+    left:400px;
+    z-index:-1;
+}
+
+.after_middle_page_background2{
+    display:flex;
+    justify-content: right;
+    margin-top: -1700px;
+    position: relative;
+    left:1000px;
+    z-index:-1;
+}
+
+.bottom_page_items{
+    margin-top:500px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    
+}
+
+.smithing_stones{
+    opacity:0.3;
+    transition:0.5s linear;
+}
+
+.smithing_stones:hover{
+    opacity: 1;
+}
+
+.bottom_page_mtext{
+    font-family: 'Baskervville SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 82%;
+    /* or 79px */
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #C7C3C3;
+
+    text-shadow: 0px 4px 66.7px #FFFFFF;
+
+}
+
+.bottom_page_bosses{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom_page_text{
+    color:white;
+    width:400px;
+    text-align:center;
+    position:relative;
+    left:100px;
+    font-family: 'Baskervville SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 82%;
+    /* or 30px */
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #7C7C7C;
+
+    text-shadow: 0px 4px 69.8px #FEFEFE;
+
+}
+.bottom_page_text1{
+    color:white;
+    width:400px;
+    text-align:center;
+    position:relative;
+    left:100px;
+    font-family: 'Baskervville SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 82%;
+    /* or 30px */
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #7C7C7C;
+
+    text-shadow: 0px 4px 69.8px #FFD970;
+
+}
+.bottom_page_text2{
+    color:white;
+    width:400px;
+    text-align:center;
+    position:relative;
+    left:100px;
+    font-family: 'Baskervville SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 82%;
+    /* or 30px */
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #7C7C7C;
+
+    text-shadow: 0px 4px 69.8px #FF8000;
+}
+
+.bottom_page_boss{
+    display:flex;
+    justify-content: center;
+    width: 400px;
+    flex-wrap: wrap;
+    opacity:0.3;
+    transition:0.5s ease-out;
+    animation: slide-in-down 0.5s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.bottom_page_boss:hover{
+    opacity: 1;
+    transform: scale(110%);
+}
+
+.bottom_page_text_bosses{
+    color:white;
+    width:400px;
+    text-align:center;
+    position:relative;
+    font-family: 'Baskervville SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 82%;
+    /* or 30px */
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #7C7C7C;
+
+    text-shadow: 0px 4px 69.8px #FEFEFE;
+
+}
+
+#lost_tarnished{
+    font-family: 'Bungee Hairline';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #928E8E;
+
+    opacity: 0.65;
+    text-shadow: 0px 4px 24.1px #000000;
+    margin:0px;
+}
+
+.bottom_banner{
+    border-top: 1px solid white;
+    margin-top: 100px;
+}
+
+.social{
+    margin-top:-100px;
+}
